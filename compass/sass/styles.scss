@@ -1,0 +1,30 @@
+header {
+  padding: 10px;
+
+  h1 {
+    color: blue;
+  }
+
+  p {
+    font-size: 18px;
+    color: rgb(153, 150, 150);
+  }
+
+  ul {
+    display: block;
+    line-height: 1.4;
+
+    li {
+      margin: 5px;
+      display: inline;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(235, 14, 14);
+        }
+      }
+    }
+  }
+}
