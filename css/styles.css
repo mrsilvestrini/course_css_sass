@@ -2,36 +2,78 @@
 header {
   padding: 10px;
 }
-
 /* line 4, ../compass/sass/styles.scss */
 header h1 {
   color: blue;
 }
-
 /* line 8, ../compass/sass/styles.scss */
 header p {
   font-size: 18px;
   color: #999696;
 }
-
 /* line 13, ../compass/sass/styles.scss */
 header ul {
   display: block;
   line-height: 1.4;
 }
-
 /* line 17, ../compass/sass/styles.scss */
 header ul li {
-  margin: 5px;
+  margin: 6px;
   display: inline;
 }
-
 /* line 21, ../compass/sass/styles.scss */
 header ul li a {
   text-decoration: none;
 }
-
 /* line 24, ../compass/sass/styles.scss */
 header ul li a:hover {
   color: #eb0e0e;
+}
+
+/* line 32, ../compass/sass/styles.scss */
+.btn-default, .btn-blue, .btn-red, .btn-green, .btn-yellow {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #535353;
+  background-color: #fff;
+}
+/* line 46, ../compass/sass/styles.scss */
+.btn-default:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-yellow:hover {
+  opacity: 0.9;
+}
+
+/* line 52, ../compass/sass/styles.scss */
+.btn-blue {
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: #5555e9;
+}
+
+/* line 59, ../compass/sass/styles.scss */
+.btn-red {
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: #db5555;
+}
+
+/* line 67, ../compass/sass/styles.scss */
+.btn-green {
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: #59ac59;
+}
+
+/* line 75, ../compass/sass/styles.scss */
+.btn-yellow {
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: #caca54;
 }
