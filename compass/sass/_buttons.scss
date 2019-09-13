@@ -7,7 +7,11 @@ $btn_color_red    :rgb(219, 85, 85);
 $btn_color_green  :rgb(89, 172, 89);
 $btn_color_yellow :rgb(228, 228, 15);
 
-@mixin NewButton ($color, $colorText, $colorBorder, $hover) {
+@function btnColor($color) {
+    @return darken($color, 20%);
+}
+
+@mixin NewButton ($color, $colorText, $colorBorder) {
     padding              : 10px 16px;
     font-size            : 24px;
     text-align           : center;
@@ -17,31 +21,31 @@ $btn_color_yellow :rgb(228, 228, 15);
     -webkit-border-radius: percentage(1/5);
     -moz-border-radius   : 4px;
     -ms-border-radius    : 4px;
-    -o-border-radius     : 4px;
+    -o-border-radius     : 5px;
     color                : $colorText;
     background-color     : $color;
 
     &:hover {
-        background-color: darken($color: $hover, $amount: 0);
+        background-color: btnColor($btn_color_default);
     }
 }
 
 .btn-default {
-    @include NewButton($btn_color_default, #ccc, #ccc, rgb(54, 54, 54));
+    @include NewButton($btn_color_default, #ccc, #ccc);
 }
 
 .btn-blue {
-    @include NewButton($btn_color_blue, white, $btn_color_blue, rgb(20, 2, 100));
+    @include NewButton($btn_color_blue, white, $btn_color_blue);
 }
 
 .btn-red {
-    @include NewButton($btn_color_red, white, $btn_color_red, rgb(61, 12, 12));
+    @include NewButton($btn_color_red, white, $btn_color_red);
 }
 
 .btn-green {
-    @include NewButton($btn_color_green, gray, $btn_color_green, rgb(89, 126, 89));
+    @include NewButton($btn_color_green, gray, $btn_color_green);
 }
 
 .btn-yellow {
-    @include NewButton($btn_color_yellow, blue, $btn_color_yellow, rgb(255, 255, 147));
+    @include NewButton($btn_color_yellow, blue, $btn_color_yellow);
 }
