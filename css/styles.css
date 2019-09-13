@@ -1,86 +1,56 @@
-/*_main.scss*/
-/* line 2, ../compass/sass/_main.scss */
-header {
-  padding: 10px;
-}
-/* line 5, ../compass/sass/_main.scss */
-header h1 {
-  color: blue;
-}
-/* line 9, ../compass/sass/_main.scss */
-header p {
-  font-size: 18px;
-  color: #999696;
-}
-/* line 14, ../compass/sass/_main.scss */
-header ul {
-  display: block;
-  line-height: 1.4;
-}
-/* line 18, ../compass/sass/_main.scss */
-header ul li {
-  margin: 6px;
-  display: inline;
-}
-/* line 22, ../compass/sass/_main.scss */
-header ul li a {
-  text-decoration: none;
-}
-/* line 25, ../compass/sass/_main.scss */
-header ul li a:hover {
-  color: #eb0e0e;
-}
+/*
+Errno::ESTALE: Stale file handle - /src/.sass-cache/6d1c4c69c854e385bf12c43b7c0a1c5819cc8a70/_buttons.scssc
 
-/*_buttons.scss*/
-/*variables in sass*/
-/* line 10, ../compass/sass/_buttons.scss */
-.btn-default, .btn-blue, .btn-red, .btn-green, .btn-yellow {
-  padding: 10px 16px;
-  font-size: 24px;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-border-radius: 20%;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  color: #535353;
-  background-color: #fff;
-}
-/* line 24, ../compass/sass/_buttons.scss */
-.btn-default:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-yellow:hover {
-  background-color: #804040;
-}
-
-/* line 29, ../compass/sass/_buttons.scss */
-.btn-blue {
-  border: 1px solid #ffffff;
-  color: white;
-  background-color: #5555e9;
-}
-/* line 35, ../compass/sass/_buttons.scss */
-.btn-blue:hover {
-  background-color: #c00000;
-}
-
-/* line 40, ../compass/sass/_buttons.scss */
-.btn-red {
-  border: 1px solid #ffffff;
-  color: white;
-  background-color: #db5555;
-}
-
-/* line 48, ../compass/sass/_buttons.scss */
-.btn-green {
-  border: 1px solid #ffffff;
-  color: white;
-  background-color: #59ac59;
-}
-
-/* line 56, ../compass/sass/_buttons.scss */
-.btn-yellow {
-  border: 1px solid #ffffff;
-  color: white;
-  background-color: #e4e40f;
-}
+Backtrace:
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/filesystem.rb:20:in `initialize'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/filesystem.rb:20:in `open'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/filesystem.rb:20:in `_retrieve'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/base.rb:63:in `retrieve'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/chain.rb:25:in `block in retrieve'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/chain.rb:24:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/chain.rb:24:in `each_with_index'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/cache_stores/chain.rb:24:in `retrieve'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:386:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:299:in `to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/var/lib/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:291:in `call'
+/var/lib/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:291:in `_process_changes'
+/var/lib/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
+/var/lib/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:238:in `loop'
+/var/lib/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:238:in `_wait_for_changes'
+/var/lib/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ESTALE: Stale file handle - /src/.sass-cache/6d1c4c69c854e385bf12c43b7c0a1c5819cc8a70/_buttons.scssc"; }

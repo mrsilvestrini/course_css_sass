@@ -2,60 +2,46 @@
 
 /*variables in sass*/
 $btn_color_default:#fff;
-$btn_color_blue:rgb(85, 85, 233);
-$btn_color_red:rgb(219, 85, 85);
-$btn_color_green:rgb(89, 172, 89);
-$btn_color_yellow:rgb(228, 228, 15);
+$btn_color_blue   :rgb(85, 85, 233);
+$btn_color_red    :rgb(219, 85, 85);
+$btn_color_green  :rgb(89, 172, 89);
+$btn_color_yellow :rgb(228, 228, 15);
 
-.btn-default {
-    padding: 10px 16px;
-    font-size: 24px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+@mixin NewButton ($color, $colorText, $colorBorder, $hover) {
+    padding              : 10px 16px;
+    font-size            : 24px;
+    text-align           : center;
+    vertical-align       : middle;
+    border               : 1px solid $colorBorder;
+    border-radius        : 4px;
     -webkit-border-radius: percentage(1/5);
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    color: #535353;
-    background-color: $btn_color_default;
+    -moz-border-radius   : 4px;
+    -ms-border-radius    : 4px;
+    -o-border-radius     : 4px;
+    color                : $colorText;
+    background-color     : $color;
 
     &:hover {
-        background-color: darken($color: #804040, $amount: 0);
+        background-color: darken($color: $hover, $amount: 0);
     }
+}
+
+.btn-default {
+    @include NewButton($btn_color_default, #ccc, #ccc, rgb(54, 54, 54));
 }
 
 .btn-blue {
-    @extend .btn-default;
-    border: 1px solid #ffffff;
-    color: white;
-    background-color: $btn_color_blue;
-
-    &:hover {
-        background-color: saturate(#804040, 90%);
-    }
+    @include NewButton($btn_color_blue, white, $btn_color_blue, rgb(20, 2, 100));
 }
 
 .btn-red {
-    @extend .btn-default;
-    border: 1px solid #ffffff;
-    color: white;
-    background-color: $btn_color_red;
-
+    @include NewButton($btn_color_red, white, $btn_color_red, rgb(61, 12, 12));
 }
 
 .btn-green {
-    @extend .btn-default;
-    border: 1px solid #ffffff;
-    color: white;
-    background-color: $btn_color_green;
-
+    @include NewButton($btn_color_green, gray, $btn_color_green, rgb(89, 126, 89));
 }
 
 .btn-yellow {
-    @extend .btn-default;
-    border: 1px solid #ffffff;
-    color: white;
-    background-color: $btn_color_yellow;
+    @include NewButton($btn_color_yellow, blue, $btn_color_yellow, rgb(255, 255, 147));
 }
